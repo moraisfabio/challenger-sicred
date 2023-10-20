@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9623c8e5-fde4-4db3-b2f7-a697c9fef917" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/ScheduleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/Schedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/ISchedulesRepositories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/services/IScheduleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/services/ScheduleServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/sicredi/pom.xml" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2X0COdkNJGnlreGIyBygjtnGMgh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fabio.morais/Documents/Challenger-Sicred&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JAR Application.maven-wrapper.jar">
+    <configuration name="maven-wrapper.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/sicredi/.mvn/wrapper/maven-wrapper.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ManagevotesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="managevotes" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.challenger.managevotes.ManagevotesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9623c8e5-fde4-4db3-b2f7-a697c9fef917" name="Changes" comment="" />
+      <created>1697756589986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697756589986</updated>
+      <workItem from="1697756592130" duration="724000" />
+      <workItem from="1697757331600" duration="1132000" />
+      <workItem from="1697758505825" duration="124000" />
+      <workItem from="1697804991048" duration="311000" />
+      <workItem from="1697805327557" duration="235000" />
+      <workItem from="1697805572623" duration="638000" />
+      <workItem from="1697807622856" duration="5073000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+  </component>
+</project>
