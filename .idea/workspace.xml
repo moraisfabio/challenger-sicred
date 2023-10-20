@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9623c8e5-fde4-4db3-b2f7-a697c9fef917" name="Changes" comment="">
+    <list default="true" id="9623c8e5-fde4-4db3-b2f7-a697c9fef917" name="Changes" comment="feat: initial config">
       <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/ScheduleDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/Schedule.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/ISchedulesRepositories.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/services/IScheduleService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/services/ScheduleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +97,17 @@
       <workItem from="1697804991048" duration="311000" />
       <workItem from="1697805327557" duration="235000" />
       <workItem from="1697805572623" duration="638000" />
-      <workItem from="1697807622856" duration="5073000" />
+      <workItem from="1697807622856" duration="6109000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: initial config">
+      <option name="closed" value="true" />
+      <created>1697814764363</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697814764363</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,5 +116,9 @@
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="executable:docker" />
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: initial config" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: initial config" />
   </component>
 </project>
