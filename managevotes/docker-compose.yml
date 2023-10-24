@@ -13,13 +13,13 @@ services:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: challenger00t
 
-  api:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: api
-    ports:
-      - 3004:3004
+#  api:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    container_name: api
+#    ports:
+#      - 3004:3004
 
   rabbitmq:
     image: rabbitmq:3-management
