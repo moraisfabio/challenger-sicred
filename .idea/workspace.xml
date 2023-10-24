@@ -4,13 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9623c8e5-fde4-4db3-b2f7-a697c9fef917" name="Changes" comment="feat: initial config">
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/ScheduleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/Schedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/ISchedulesRepositories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/services/IScheduleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/services/ScheduleServiceImpl.java" afterDir="false" />
+    <list default="true" id="9623c8e5-fde4-4db3-b2f7-a697c9fef917" name="Changes" comment="feat: create services for the schedules">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/managevotes_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/config/cachingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/connections/RabbitMQConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/connections/ValidateCpfConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/constants/RabbitmqConstans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/exceptions/RolesException/MessageException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/exceptions/RolesException/RolesException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/security/SecurityFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/security/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/DocApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/v1/authentication/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/v1/choice/ChoiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/v1/openSession/OpenSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/v1/schedule/SchedulesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/authService/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/choice/ChoiceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/choice/IChoiceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/rabbitmq/RabbitMqService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/schedule/IScheduleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/schedule/ScheduleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/session/ISessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/session/SessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/authentication/AuthenticationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/authentication/TokenResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/choice/ChoiceDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/schedule/ScheduleResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/session/SessionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/user/CreateUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/Session/SessionVotes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/choice/Choice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/choice/EChoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/user/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/choice/IChoiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/schedule/ISchedulesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/sessionVotes/ISessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/user/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/managevotes/src/test/java/com/challenger/managevotes/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managevotes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/ScheduleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/schedule/ScheduleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/schedule/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/ISchedulesRepositories.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/services/IScheduleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/services/ScheduleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/managevotes/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +72,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -49,27 +103,119 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/fabio.morais/Documents/Challenger-Sicred&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/fabio.morais/Documents/Challenger-Sicred",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL",
+      "OracleSqlPlus"
+    ]
   }
-}</component>
-  <component name="RunManager" selected="JAR Application.maven-wrapper.jar">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.challenger.managevotes.shared.exceptions.RolesException" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fabio.morais\Documents\Challenger-Sicred\managevotes" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.challenger.managevotes" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="V2_create-users-table.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/managevotes/src/main/resources/db/migrations/V2_create-users-table.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="Authentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="managevotes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.challenger.managevotes.core.exceptions.RolesException.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.challenger.managevotes" />
+      <option name="MAIN_CLASS_NAME" value="com.challenger.managevotes.Authentication" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Authentication.getUserFromContext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="managevotes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.challenger.managevotes.core.exceptions.RolesException.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.challenger.managevotes" />
+      <option name="MAIN_CLASS_NAME" value="com.challenger.managevotes.Authentication" />
+      <option name="METHOD_NAME" value="getUserFromContext" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Authentication.setupUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="managevotes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.challenger.managevotes.core.exceptions.RolesException.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.challenger.managevotes" />
+      <option name="MAIN_CLASS_NAME" value="com.challenger.managevotes.Authentication" />
+      <option name="METHOD_NAME" value="setupUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagevotesApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="managevotes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.challenger.managevotes.core.exceptions.RolesException.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.challenger.managevotes" />
+      <option name="MAIN_CLASS_NAME" value="com.challenger.managevotes.ManagevotesApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="maven-wrapper.jar" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/sicredi/.mvn/wrapper/maven-wrapper.jar" />
       <method v="2" />
@@ -82,6 +228,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Authentication" />
+        <item itemvalue="JUnit.Authentication.setupUser" />
+        <item itemvalue="JUnit.Authentication.getUserFromContext" />
+        <item itemvalue="JUnit.ManagevotesApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -97,7 +251,14 @@
       <workItem from="1697804991048" duration="311000" />
       <workItem from="1697805327557" duration="235000" />
       <workItem from="1697805572623" duration="638000" />
-      <workItem from="1697807622856" duration="6109000" />
+      <workItem from="1697807622856" duration="8364000" />
+      <workItem from="1697837177184" duration="1050000" />
+      <workItem from="1697929223485" duration="6982000" />
+      <workItem from="1697937131069" duration="9057000" />
+      <workItem from="1697986236362" duration="59040000" />
+      <workItem from="1698097939556" duration="11816000" />
+      <workItem from="1698110772187" duration="6992000" />
+      <workItem from="1698148629540" duration="26986000" />
     </task>
     <task id="LOCAL-00001" summary="feat: initial config">
       <option name="closed" value="true" />
@@ -107,7 +268,47 @@
       <option name="project" value="LOCAL" />
       <updated>1697814764363</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: create entity for the schedules">
+      <option name="closed" value="true" />
+      <created>1697816297810</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697816297810</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: create repositories for the schedules">
+      <option name="closed" value="true" />
+      <created>1697816325515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697816325515</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: create dtos for the schedules">
+      <option name="closed" value="true" />
+      <created>1697816342211</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697816342211</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: create services for the schedules">
+      <option name="closed" value="true" />
+      <created>1697816364635</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697816364635</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: create services for the schedules">
+      <option name="closed" value="true" />
+      <created>1697816405047</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697816405047</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +320,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: initial config" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: initial config" />
+    <MESSAGE value="feat: create entity for the schedules" />
+    <MESSAGE value="feat: create repositories for the schedules" />
+    <MESSAGE value="feat: create dtos for the schedules" />
+    <MESSAGE value="feat: create services for the schedules" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create services for the schedules" />
   </component>
 </project>
