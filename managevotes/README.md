@@ -9,7 +9,7 @@ This challenger is to make an API REST to manage votes
 # the compilation of the project need to docker on your machine.
 
 How to execute the application for the test
-1 - execute docker-compose up -d this command will up the database and rabbitmq and the api
+1 - execute docker-compose up -d this command will up the database and rabbitmq and the api<br>
 2 - to execute all tests, import the collection in the directory core/collectionexecute, using postman or any other tool for services rest
 
 # Author
