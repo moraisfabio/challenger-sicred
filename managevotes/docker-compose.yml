@@ -1,45 +1,65 @@
-version: '3.1'
+version: '3.8'
 
 services:
 
-  db:
+  postgres:
     image: postgres
     restart: always
+    container_name: postgres
     ports:
-      - 5432:5432
+      - "5432:5432"
     volumes:
-      - ./data:/data
+      - data:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: challenger00t
-
-#  api:
-#    build:
-#      context: .
-#      dockerfile: Dockerfile
-#    container_name: api
-#    ports:
-#      - 3004:3004
+      POSTGRES_DB: challenger
+    networks:
+      network:
+        ipv4_address: 192.168.0.2
 
   rabbitmq:
     image: rabbitmq:3-management
     container_name: rabbitmq
     restart: always
     ports:
-      - 5672:5672
-      - 15672:15672
+      - "5672:5672"
+      - "15672:15672"
     volumes:
       - ./data:/var/lib/rabbitmq/
     environment:
        - RABBITMQ_DEFAULT_USER=admin
        - RABBITMQ_DEFAULT_PASS=root123
-  adminer:
-    image: adminer
-    restart: always
+    networks:
+      network:
+        ipv4_address: 192.168.0.3
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api
     ports:
-      - 8181:8181
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/challenger
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=challenger00t
+    networks:
+      network:
+        ipv4_address: 192.168.0.4
 
 
 volumes:
   data:
-    driver: local
+
+networks:
+  network:
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.0.0/24"
+
+

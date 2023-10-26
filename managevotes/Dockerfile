@@ -1,11 +1,14 @@
-FROM eclipse-temurin:17-jdk-focal
+FROM openjdk:17-jdk-slim AS build
 
-WORKDIR /app
+COPY pom.xml mvnw ./
+COPY .mvn .mvn
+RUN ./mvnw dependency:resolve
 
-COPY .mvn/ .mvn
-COPY mvnw pom.xml ./
-RUN ./mvnw dependency:go-offline
+COPY src src
+RUN ./mvnw package
 
-COPY src ./src
-
-CMD ["./mvnw", "spring-boot:run"]
+FROM openjdk:17-jdk-slim
+WORKDIR challenger
+COPY --from=build target/*.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
+EXPOSE 8080

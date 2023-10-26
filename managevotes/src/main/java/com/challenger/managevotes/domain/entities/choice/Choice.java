@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Getter
 @Setter
-@EqualsAndHashCode(of= "id")
 public class Choice {
     @NotNull(message = "CPF is required.")
     @Id
