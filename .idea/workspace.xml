@@ -4,65 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9623c8e5-fde4-4db3-b2f7-a697c9fef917" name="Changes" comment="feat: create services for the schedules">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/managevotes_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/config/cachingConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/connections/RabbitMQConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/connections/ValidateCpfConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/constants/RabbitmqConstans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/exceptions/RolesException/MessageException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/exceptions/RolesException/RolesException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/security/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/security/SecurityFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/core/security/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/DocApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/v1/authentication/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/v1/choice/ChoiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/v1/openSession/OpenSessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/v1/schedule/SchedulesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/authService/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/choice/ChoiceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/choice/IChoiceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/rabbitmq/RabbitMqService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/schedule/IScheduleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/schedule/ScheduleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/session/ISessionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/services/session/SessionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/authentication/AuthenticationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/authentication/TokenResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/choice/ChoiceDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/schedule/ScheduleResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/session/SessionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/user/CreateUserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/Session/SessionVotes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/choice/Choice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/choice/EChoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/user/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/choice/IChoiceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/schedule/ISchedulesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/sessionVotes/ISessionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/user/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/managevotes/src/test/java/com/challenger/managevotes/Authentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="9623c8e5-fde4-4db3-b2f7-a697c9fef917" name="Changes" comment="removed import un necessary">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/managevotes_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/managevotes_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/managevotes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/ScheduleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/dtos/schedule/ScheduleDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/entities/schedule/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/repositories/ISchedulesRepositories.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/services/IScheduleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/domain/services/ScheduleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/managevotes/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/v1/choice/ChoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/src/main/java/com/challenger/managevotes/data/controller/v1/choice/ChoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managevotes/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/managevotes/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +25,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -103,40 +53,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/fabio.morais/Documents/Challenger-Sicred",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fabio.morais/Documents/Challenger-Sicred/managevotes/target&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
-      "PostgreSQL",
-      "OracleSqlPlus"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;PostgreSQL&quot;,
+      &quot;OracleSqlPlus&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.challenger.managevotes.shared.exceptions.RolesException" />
@@ -258,7 +208,11 @@
       <workItem from="1697986236362" duration="59040000" />
       <workItem from="1698097939556" duration="11816000" />
       <workItem from="1698110772187" duration="6992000" />
-      <workItem from="1698148629540" duration="26986000" />
+      <workItem from="1698148629540" duration="33246000" />
+      <workItem from="1698187313995" duration="8696000" />
+      <workItem from="1698241040362" duration="3465000" />
+      <workItem from="1698327781019" duration="2178000" />
+      <workItem from="1698333813961" duration="9733000" />
     </task>
     <task id="LOCAL-00001" summary="feat: initial config">
       <option name="closed" value="true" />
@@ -308,7 +262,127 @@
       <option name="project" value="LOCAL" />
       <updated>1697816405047</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: implementing authentication">
+      <option name="closed" value="true" />
+      <created>1698180647005</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698180647005</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: implementing create user dto">
+      <option name="closed" value="true" />
+      <created>1698180679403</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698180679403</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: implementing create user">
+      <option name="closed" value="true" />
+      <created>1698180772460</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698180772460</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: implementing token">
+      <option name="closed" value="true" />
+      <created>1698180815504</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698180815504</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: implementing config security token">
+      <option name="closed" value="true" />
+      <created>1698180878578</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698180878578</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: implementing all files to session">
+      <option name="closed" value="true" />
+      <created>1698180959776</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698180959776</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: implementing all files to choice">
+      <option name="closed" value="true" />
+      <created>1698180993787</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698180993787</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: implementing all files to schedule">
+      <option name="closed" value="true" />
+      <created>1698181035010</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698181035010</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: implementing system of message">
+      <option name="closed" value="true" />
+      <created>1698181119131</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698181119131</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: implementing exceptions message">
+      <option name="closed" value="true" />
+      <created>1698181136938</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1698181136938</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: adding dockerfile">
+      <option name="closed" value="true" />
+      <created>1698181224007</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1698181224007</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: adding dockerfile">
+      <option name="closed" value="true" />
+      <created>1698182491676</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1698182491676</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: adding colletion to execute by postman">
+      <option name="closed" value="true" />
+      <created>1698183048412</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1698183048412</updated>
+    </task>
+    <task id="LOCAL-00020" summary="correction of environment variable on aplication.properties to connect a database and change build to dockerfile api">
+      <option name="closed" value="true" />
+      <created>1698341872078</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1698341872078</updated>
+    </task>
+    <task id="LOCAL-00021" summary="correction of environment variable on aplication.properties to connect a database and change build to dockerfile api">
+      <option name="closed" value="true" />
+      <created>1698341965125</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1698341965125</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +398,20 @@
     <MESSAGE value="feat: create repositories for the schedules" />
     <MESSAGE value="feat: create dtos for the schedules" />
     <MESSAGE value="feat: create services for the schedules" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create services for the schedules" />
+    <MESSAGE value="feat: implementing authentication" />
+    <MESSAGE value="feat: implementing create user dto" />
+    <MESSAGE value="feat: implementing create user" />
+    <MESSAGE value="feat: implementing token" />
+    <MESSAGE value="feat: implementing config security token" />
+    <MESSAGE value="feat: implementing all files to session" />
+    <MESSAGE value="feat: implementing all files to choice" />
+    <MESSAGE value="feat: implementing all files to schedule" />
+    <MESSAGE value="feat: implementing system of message" />
+    <MESSAGE value="feat: implementing exceptions message" />
+    <MESSAGE value="feat: adding dockerfile" />
+    <MESSAGE value="feat: adding colletion to execute by postman" />
+    <MESSAGE value="correction of environment variable on aplication.properties to connect a database and change build to dockerfile api" />
+    <MESSAGE value="removed import un necessary" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed import un necessary" />
   </component>
 </project>
